@@ -170,21 +170,7 @@
                 'Quantity': quantityperunit[Math.floor(Math.random() * quantityperunit.length)]
             });
         }
-    }
-    var genarateData = new ej.buttons.Button({}, '#genarate');
-    genarateData.element.onclick = function () {
-//         debugger;
-        if (lazyLoadData.length <= 20000) {
-            customizeLazyLoadData();
-        }
-        else {
-            return;
-        }
-        if (lazyLoadData.length === 100000) {
-            grid.dataSource = lazyLoadData;
-        }
-    };
-    
+    }    
     var autoComplete;
     var grid = new ej.grids.Grid({
         dataSource: lazyLoadData,
